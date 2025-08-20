@@ -11,7 +11,7 @@ export default function Dashboard() {
 const handleNavigate = (id) => {
   console.log("Navigating to product", id);
   naviagte(`/product/${id}`);
-};
+};   
 
 
   const stats = [
@@ -44,8 +44,9 @@ const handleNavigate = (id) => {
     minHeight: "100vh",
     background: "linear-gradient(to bottom, #0d47a1, #1976d2)",
     color: "white",
-    padding: "24px",
-    fontFamily: "Arial, sans-serif"
+    // padding: "24px",
+    fontFamily: "Arial, sans-serif",
+    
     
   };
 
