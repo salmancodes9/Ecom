@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faHeart, faTruckFast, faUser } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import Product from "../Product/Product";
+import css from "./Dashboard.jsx"
 
 export default function Dashboard() {
   const [username] = useState("Salman Dar");
@@ -11,7 +12,7 @@ export default function Dashboard() {
 const handleNavigate = (id) => {
   console.log("Navigating to product", id);
   naviagte(`/product/${id}`);
-};   
+};
 
 
   const stats = [
@@ -38,17 +39,27 @@ const handleNavigate = (id) => {
   { id: 14, name: "Desk Lamp", price: "$34.99", image: "https://m.media-amazon.com/images/I/71DoZhiZ0WS.jpg" },
 
 ];
-
-
+ 
+  // const containerStyle = {
+  //   minHeight: "100vh",
+  //   background: "linear-gradient(to bottom, #0d47a1, #1976d2)",
+  //   color: "white",
+  //   padding: "24px",
+  //   fontFamily: "Arial, sans-serif",
+    
+  
+  // };
   const containerStyle = {
-    minHeight: "100vh",
-    background: "linear-gradient(to bottom, #0d47a1, #1976d2)",
-    color: "white",
-    // padding: "24px",
-    fontFamily: "Arial, sans-serif",
-    
-    
-  };
+  minHeight: "100vh",
+  width: "100%",          
+  margin: 0,              
+  background: "linear-gradient(to bottom, #0d47a1, #1976d2)",
+  color: "white",
+  padding: "24px",
+  fontFamily: "Arial, sans-serif",
+  boxSizing: "border-box" 
+};
+
 
   const headerStyle = {
     display: "flex",
@@ -80,7 +91,8 @@ const handleNavigate = (id) => {
     padding: "24px",
     display: "flex",
     alignItems: "center",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.2)"
+    boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+    cursor:"pointer"
   };
 
   const productCardStyle = {
@@ -103,7 +115,8 @@ const handleNavigate = (id) => {
   };
 
   return (
-    <div style={containerStyle}>
+    
+    <div style={containerStyle} >
       <header style={headerStyle}>
         <h1 style={{ fontSize: "28px", fontWeight: "bold" }}>Welcome, {username} 👋</h1>
         <button style={buttonStyle}>
