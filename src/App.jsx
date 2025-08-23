@@ -28,8 +28,7 @@ const App = () => {
       {
         location.pathname !== "/login" &&  <Navbar />
       }
-     
-
+    
       <Routes>
        
         <Route path="/" element={<Dashboard />} />

@@ -53,12 +53,16 @@ const handleNavigate = (id) => {
   minHeight: "100vh",
   width: "100%",          
   margin: 0,              
-  background: "linear-gradient(to bottom, #0d47a1, #1976d2)",
+  // background: "linear-gradient(to bottom, #0d47a1, #1976d2)",
+  background:" linear-gradient(135deg, #667eea, #764ba2",
+
   color: "white",
   padding: "24px",
   fontFamily: "Arial, sans-serif",
   boxSizing: "border-box" 
 };
+
+
 
 
   const headerStyle = {
@@ -86,7 +90,8 @@ const handleNavigate = (id) => {
   };
 
   const cardStyle = {
-    backgroundColor: "#1565c0",
+    // backgroundColor: "#1565c0",
+    background:" linear-gradient(135deg, #667eea, #764ba2",
     borderRadius: "12px",
     padding: "24px",
     display: "flex",
@@ -96,23 +101,41 @@ const handleNavigate = (id) => {
   };
 
   const productCardStyle = {
-    backgroundColor: "#1565c0",
+    // backgroundColor: "#1565c0",
+    // background:" linear-gradient(135deg, #667eea, #764ba2",
+    background:"linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4",
+
     borderRadius: "12px",
     overflow: "hidden",
     boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
     cursor: "pointer"
   };
 
-  const addToCartButtonStyle = {
-    width: "100%",
-    backgroundColor: "#01060aff",
-    color: "white",
-    padding: "8px 12px",
-    border: "none",
-    borderRadius: "8px",
-    cursor: "pointer",
-    marginTop: "8px"
-  };
+  // const addToCartButtonStyle = {
+  //   width: "100%",
+  //   backgroundColor: "#01060aff",
+  //   color: "white",
+  //   padding: "8px 12px",
+  //   border: "none",
+  //   borderRadius: "8px",
+  //   cursor: "pointer",
+  //   marginTop: "8px"
+  // };
+
+const addToCartButtonStyle = {
+  width: "100%",
+  background: "linear-gradient(135deg, #00c6ff, #0072ff)", // cyan → deep blue
+  color: "white",
+  padding: "10px 14px",
+  border: "none",
+  borderRadius: "10px",
+  cursor: "pointer",
+  marginTop: "8px",
+  fontWeight: "bold",
+  fontSize: "14px",
+  transition: "all 0.3s ease-in-out",
+};
+
 
   return (
     
